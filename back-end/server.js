@@ -40,7 +40,7 @@ mongoose.connect('mongodb+srv://' + CONFIG.dbUser + ':' + CONFIG.dbPassword + '@
   useNewUrlParser: true
 });
 
-app.listen(3000, () => console.log('Server listening on port 3000!'));
+app.listen(3001, () => console.log('Server listening on port 3001!'));
 
 app.post('/api/blogposts', async (req, res) => {
   const blog_post = new BlogPost({
